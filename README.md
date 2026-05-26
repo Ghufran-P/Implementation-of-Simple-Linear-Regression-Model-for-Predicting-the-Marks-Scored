@@ -33,12 +33,6 @@ model = LinearRegression()
 
 model.fit(X, Y)
 
-m = model.coef_[0]
-b = model.intercept_
-
-print("Slope (m):", m)
-print("Intercept (b):", b)
-
 x_input = float(input("Enter hours studied: "))
 predicted_marks = model.predict([[x_input]])
 print("Predicted Marks:", predicted_marks[0])
